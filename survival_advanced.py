@@ -24,7 +24,7 @@ def survival_advanced_page():
         data = pd.read_excel(file_path)
         return data
 
-    survival_data = load_data('/Users/cmocanu/Desktop/OMICS ANALYSIS/TCGA PanCanAtlas resources DDR/Web app/Survival_advanced.xlsx')  # Update this with the correct path
+    survival_data = load_data('Survival_advanced.xlsx') 
 
     st.header('Survival Data Analysis')
 
@@ -34,7 +34,7 @@ def survival_advanced_page():
 
     # Explanation of competing risk
     st.subheader('Competing Risk Explanation')
-    st.write('...')  # Add your explanation here
+    st.write('Explanation to be added') 
 
     # User selection for competing risk
     st.subheader('Competing Risk Consideration')
