@@ -15,7 +15,7 @@ def survival_simplified_page():
         return pd.read_excel(file_path)
     
     # Load the survival data
-    survival_data = load_data('/Users/cmocanu/Desktop/OMICS ANALYSIS/TCGA PanCanAtlas resources DDR/Web app/Survival_simple.xlsx')  # Update this with the correct path
+    survival_data = load_data('Survival_simple.xlsx')
 
     st.header('Survival Data Analysis')
 
