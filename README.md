@@ -1,4 +1,4 @@
-# TCGA-DDR: A Web Tool for Genomic and Survival Analysis in the TCGA Cohort
+# TCGA-DDR: A Web Tool for Genomic and Survival Analysis
 
 **TCGA-DDR** is a web tool that allows users to define from 1 to 10 DNA-damage deficient TCGA groups and compute:
 
