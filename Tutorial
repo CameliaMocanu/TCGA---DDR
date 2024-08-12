@@ -1,0 +1,95 @@
+**DDR deficiency tool for genomic and survival analysis in the TCGA cohort**
+
+
+TCGA-DDR is a web tool which enables the users to define from 1 to 10 DNA-damage deficiencent TCGA groups and compute: 
+
+1) population statistics across cancer types
+2) survival statistics
+3) genomic landscape
+
+Tutorial for using the TCGA-DDR web tool
+
+
+1. Create a group
+
+A. Choose how many deficiency groups to compare: from 1 to 10.
+
+In this tutorial, we are going to choose 2 groups: MMR (mismatch repair deficient) and P53 (TP53 deficient). 
+
+
+B. Choose which genes define each deficiency group
+
+A deficiency group is determined by the loss of one or multiple genes of interest. If more than 1 gene is chosen within a group, the users can also choose whether:
+-the group is defined by the concomitent loss of genes (i.e. the group needs to be deficient in _ALL of the genes_) or 
+-any of the chosen genes is sufficient to define the deficiency (i.e. the group is deficient if _ANY of the genes_ are found to be lost)
+
+In this tutorial the MMR and P53 groups are defined as follow:
+
+
+C. Choose which cancer types to be analyzed
+
+| **Abbreviation** | **Cancer type full name**                                             |
+|------------------------|------------------------------------------------------------|
+| LAML                   | Acute Myeloid Leukemia                                      |
+| ACC                    | Adrenocortical carcinoma                                    |
+| BLCA                   | Bladder Urothelial Carcinoma                                |
+| LGG                    | Brain Lower Grade Glioma                                    |
+| BRCA                   | Breast invasive carcinoma                                   |
+| CESC                   | Cervical squamous cell carcinoma and endocervical adenocarcinoma |
+| CHOL                   | Cholangiocarcinoma                                          |
+| LCML                   | Chronic Myelogenous Leukemia                                |
+| COAD                   | Colon adenocarcinoma                                        |
+| CNTL                   | Controls                                                    |
+| ESCA                   | Esophageal carcinoma                                        |
+| FPPP                   | FFPE Pilot Phase II                                         |
+| GBM                    | Glioblastoma multiforme                                     |
+| HNSC                   | Head and Neck squamous cell carcinoma                       |
+| KICH                   | Kidney Chromophobe                                          |
+| KIRC                   | Kidney renal clear cell carcinoma                           |
+| KIRP                   | Kidney renal papillary cell carcinoma                       |
+| LIHC                   | Liver hepatocellular carcinoma                              |
+| LUAD                   | Lung adenocarcinoma                                         |
+| LUSC                   | Lung squamous cell carcinoma                                |
+| DLBC                   | Lymphoid Neoplasm Diffuse Large B-cell Lymphoma             |
+| MESO                   | Mesothelioma                                                |
+| MISC                   | Miscellaneous                                               |
+| OV                     | Ovarian serous cystadenocarcinoma                           |
+| PAAD                   | Pancreatic adenocarcinoma                                   |
+| PCPG                   | Pheochromocytoma and Paraganglioma                          |
+| PRAD                   | Prostate adenocarcinoma                                     |
+| READ                   | Rectum adenocarcinoma                                       |
+| SARC                   | Sarcoma                                                     |
+| SKCM                   | Skin Cutaneous Melanoma                                     |
+| STAD                   | Stomach adenocarcinoma                                      |
+| TGCT                   | Testicular Germ Cell Tumors                                 |
+| THYM                   | Thymoma                                                     |
+| THCA                   | Thyroid carcinoma                                           |
+| UCS                    | Uterine Carcinosarcoma                                      |
+| UCEC                   | Uterine Corpus Endometrial Carcinoma                        |
+| UVM                    | Uveal Melanoma                                              |
+
+
+Once the deficiency groups have been created, the tool computes all possible TCGA cohorts. In our case these would be:
+-dMMR-dP53: deficient in MMR, deficient in TP53
+-dMMR-pP53: deficient in MMR, proficient in TP53
+-pMMR-dP53: proficient in MMR, deficient in TP53
+-pMMR-pP53: proficient in MMR, proficient in TP53
+where d indicates 'deficient' and p 'proficient'
+
+Population statistics for these groups are shown as interactive pie-charts.
+
+2. Survival analysis:
+
+TBC
+
+FAQ
+
+A. How are DDR gene losses defined?
+
+The DDR gene loss has been obtained from . Please refrain to the article for in-depth detail of how the gene losses have been determined. 
+In short, the gene has been marked as lost if either one of the three conditions below are met:
+1. Deep copy-number genomic deletion
+2. Somatic truncating and missense mutations
+3. Coupled analysis of methylation and mRNA expression data
+
+
