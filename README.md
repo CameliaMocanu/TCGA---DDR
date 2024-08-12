@@ -28,6 +28,9 @@ In this tutorial, the MMR and P53 groups are defined as follows:
 
 #### C. Choose Which Cancer Types to be Analyzed
 
+<details>
+  <summary>Click to Expand/Collapse the List of Cancer Types</summary>
+
 | **Abbreviation** | **Cancer Type Full Name**                                             |
 |------------------|------------------------------------------------------------------------|
 | LAML             | Acute Myeloid Leukemia                                                |
@@ -67,6 +70,8 @@ In this tutorial, the MMR and P53 groups are defined as follows:
 | UCS              | Uterine Carcinosarcoma                                                |
 | UCEC             | Uterine Corpus Endometrial Carcinoma                                  |
 | UVM              | Uveal Melanoma                                                        |
+
+</details>
 
 Once the deficiency groups have been created, the tool computes all possible TCGA cohorts. In our case, these would be:
 
