@@ -23,8 +23,8 @@ A deficiency group is determined by the loss of one or multiple genes of interes
 
 In this tutorial, the MMR and P53 groups are defined as follows:
 
-- **MMR Group**: [List the genes here]
-- **P53 Group**: [List the genes here]
+- **MMR Group**: loss in either MLH1, MSH2, PMS2
+- **P53 Group**: loss in TP53
 
 #### C. Choose Which Cancer Types to be Analyzed
 
