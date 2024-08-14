@@ -50,10 +50,7 @@ st.subheader("2. Survival Analysis")
 st.markdown("""
 Original data-set: [Liu et al. 2018](https://doi.org/10.1016/j.cell.2018.02.052)
 
-The endpoints available for survival analysis are: Overall survival (OS), Disease-specific survival (DDS), Disease-free interval (DFI), and Progression-free interval (PFI). 
-
-In this tutorial, we will plot the DFI for BRCA, OV, and UCEC cancers. For OV and UCEC, all endpoints are recommended, but for BRCA, OS and DSS have cautionary notes.
-
+The endpoints available for survival analysis are: Overall survival (OS), Disease-specific survival (DDS), Disease-free interval (DFI) and Progression-free interval (PFI). A brief explanation for each endpoint is provided, as well as suggestion for which endpoint to be used based on Liue et al 2018. In this tutorial, we are interested in BRCA, OV and UCEC cancers. All endpoints are recommended for OV and UCEC, but OS and DSS have a cautionary note for BRCA samples. For this tutorial, we will plot the DFI, but users can decide on other endspoints that suit their analysis.
 The tool plots a Kaplan-Meier probability curve and provides Log-Rank Test Results.
 """)
 
