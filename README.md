@@ -2,9 +2,9 @@
 
 **TCGA-DDR** is a web tool that allows users to define from 1 to 10 DNA-damage deficient TCGA groups and compute:
 
-1. Population statistics across cancer types
-2. Survival statistics
-3. Genomic landscape
+1. Population statistics across cancer types based on user-defined deficiency groups
+2. Survival analysis
+3. DDR footprints
 
 ## Tutorial for Using the TCGA-DDR Web Tool
 
@@ -82,11 +82,19 @@ Once the deficiency groups have been created, the tool computes all possible TCG
 
 > Where **d** indicates 'deficient' and **p** indicates 'proficient'.
 
-Population statistics for these groups are shown as interactive pie-charts.
+The tool indicates the sample number across all cancer types selected, as well as showing interactive pi-echarts of the cancer type distribution. 
 
 ### 2. Survival Analysis
 
-_TBC_
+The endpoints available for survival analysis are: Overall survival (OS), Disease-specific survival (DDS), Disease-free interval (DFI) and Progression-free interval (PFI). A brief explanation for each endpoint is provided, as well as suggestion for which endpoint to be used based on Liue et al 2018. 
+In this tutorial, we are interested in BRCA, OV and UCEC cancers. All endpoints are recommended for OV and UCEC, but OS and DSS have a cautionary note for BRCA samples. For this tutorial, we will plot the DFI, but users can decide on other endspoints that suit their analysis.
+
+The tool plots a Kaplan-Meier probability curve and provides Log-Rank Test Results.
+
+### 2. DDR footprint
+
+This page offers insight of the genomic landscape of the deficiency groups of interest. The users have the options to either display one plot at a time for each feature of interest or all plots. Furthermore, there is an added functionality to split the analysis according to cancer types. In case of analysis of multiple groups or cancer types, a scroll bar below the bar is avaiable for improved readability. Furthermore, if the 'Split by cancer type' is ticked, the interactive bar chart allows users to select or deselect cancer types from the legend on the right hand side. 
+
 
 ## FAQ
 
