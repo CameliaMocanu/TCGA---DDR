@@ -84,26 +84,38 @@ Once the deficiency groups have been created, the tool computes all possible TCG
 
 The tool indicates the sample number across all cancer types selected, as well as showing interactive pi-echarts of the cancer type distribution. 
 
+[insert picture called Deficiency groups.png]
+
 ### 2. Survival Analysis
+Original data-set: Liu et al. 2018 [link: https://doi.org/10.1016/j.cell.2018.02.052]
 
 The endpoints available for survival analysis are: Overall survival (OS), Disease-specific survival (DDS), Disease-free interval (DFI) and Progression-free interval (PFI). A brief explanation for each endpoint is provided, as well as suggestion for which endpoint to be used based on Liue et al 2018. 
 In this tutorial, we are interested in BRCA, OV and UCEC cancers. All endpoints are recommended for OV and UCEC, but OS and DSS have a cautionary note for BRCA samples. For this tutorial, we will plot the DFI, but users can decide on other endspoints that suit their analysis.
 
 The tool plots a Kaplan-Meier probability curve and provides Log-Rank Test Results.
 
+[insert picture called Survival analysis.png]
+
+[insert picture called long rank test results.png]
+
 ### 2. DDR footprint
+Original data-set: Knijnenburg et al. 2018 [link:https://doi.org/10.1016/j.celrep.2018.03.076]
 
-This page offers insight of the genomic landscape of the deficiency groups of interest. The users have the options to either display one plot at a time for each feature of interest or all plots. Furthermore, there is an added functionality to split the analysis according to cancer types. In case of analysis of multiple groups or cancer types, a scroll bar below the bar is avaiable for improved readability. Furthermore, if the 'Split by cancer type' is ticked, the interactive bar chart allows users to select or deselect cancer types from the legend on the right hand side. 
+This page offers insights into the genomic landscape of the deficiency groups of interest. The users have the option to either display one plot for each feature or all plots simultaneously. Furthermore, there is an added functionality to split the analysis according to cancer types. In case of analysis of multiple groups or cancer types, a scroll bar below the plot is avaiable for improved readability. Furthermore, if the 'Split by cancer type' is ticked, the interactive bar chart allows users to select or deselect cancer types from the legend on the right hand side. 
 
+[Insert video titled DDR footprints.webm]
+
+Please visit original paper for further information: Knijnenburg et al. 2018 [link:https://doi.org/10.1016/j.celrep.2018.03.076]
 
 ## FAQ
 
 **Q: How are DDR gene losses defined?**
 
-The DDR gene loss has been obtained from [reference the article here]. Please refer to the article for in-depth detail of how the gene losses have been determined.
+The DDR gene loss has been obtained from Knijnenburg et al. 2018 [link:https://doi.org/10.1016/j.celrep.2018.03.076]. Please refer to the article for in-depth detail of how the gene losses have been determined.
 
 In short, a gene has been marked as lost if any of the following conditions are met:
 
 1. Deep copy-number genomic deletion
 2. Somatic truncating and missense mutations
 3. Coupled analysis of methylation and mRNA expression data
+
